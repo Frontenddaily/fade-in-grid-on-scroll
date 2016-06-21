@@ -1,0 +1,238 @@
+
+html,
+body {
+  /* Droid Sans appears to be a good alternative */
+  /*font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  line-height: 1.4446;
+  font-weight: 400;
+  letter-spacing: 0em;
+  background-color: #fff;
+  color: #333;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/**/
+
+.introduction-block {
+  text-align: center;
+  min-height: 450px;
+  padding: 80px 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.introduction-block .container {
+  max-width: 960px;
+}
+
+.introduction-block h1{
+  font-size: 44px;
+  line-height: 1.09091;
+  font-weight: 300;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+.introduction-block a,
+.introduction-block p {
+  font-size: 24px;
+  line-height: 1.33349;
+  font-weight: 300;
+  letter-spacing: 0em;
+}
+
+/**/
+
+.float-cards {
+
+}
+.float-cards:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.float-cards .left-side,
+.float-cards .right-side {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.float-cards .left-side {
+  float: left;
+  border-right: 15px solid #fff;
+}
+
+.float-cards .right-side {
+  float: right;
+  border-left: 15px solid #fff;
+}
+
+.float-cards .card {
+  text-align: center;
+  background: #ddeef4;
+  padding: 90px 0;
+  box-sizing: border-box;
+  border-top: 30px solid #fff;
+  height: 1000px;
+}
+
+.float-cards .card.half-height {
+  height: 500px;
+}
+
+.float-cards .card.half-height .feature-item {
+  margin-top: -90px;
+  height: 220px;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
+.float-cards .card .card-copy {
+  display: inline-block;
+  width: 377px;
+  font-size: 21px;
+  line-height: 1.33349;
+  font-weight: 300;
+  letter-spacing: 0em;
+  padding: 25px 0;
+}
+
+.float-cards .card .cta-wrapper {
+  display: block;
+  padding: 25px 0;
+  font-size: 15px;
+}
+
+.float-cards .card .cta-wrapper i {
+  vertical-align: sub;
+  font-size: 16px;
+}
+.float-cards .card .cta-wrapper a i:before {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+.float-cards .card .cta-wrapper a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.float-cards .card .cta-wrapper a:hover i:before {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.float-cards .card .card-copy h3,
+.float-cards .card .card-copy p {
+  display: inline;
+}
+
+.feature-item {
+  margin: 0 auto;
+}
+.feature-item {
+  width: 351px;
+  height: 660px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  background-size: cover;
+}
+.float-cards .card.half-height .feature-item {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top: 0;
+}
+
+/**/
+
+.float-cards .card.bg-alt1 {
+  background-color: #ff475e;
+  border-color: #e4364c;
+}
+
+.float-cards .card.bg-alt1 .feature-item {
+  background-color: #fff;
+}
+
+.float-cards .card.bg-alt1 .card-copy a,
+.float-cards .card.bg-alt1 .card-copy {
+  color: #fff;
+}
+
+/**/
+
+.float-cards .card.bg-alt2 {
+  background-color: #79cd83;
+  border-color: #58ad62;
+}
+
+.float-cards .card.bg-alt2 .feature-item {
+  background-color: #fff;
+}
+
+.float-cards .card.bg-alt2 .card-copy a,
+.float-cards .card.bg-alt2 .card-copy {
+  color: #fff;
+}
+
+/**/
+
+.float-cards .card.bg-alt3 {
+  background-color: #65bcde;
+  border-color: #39829e;
+}
+
+.float-cards .card.bg-alt3 .feature-item {
+  background-color: #fff;
+}
+
+.float-cards .card.bg-alt3 .card-copy a,
+.float-cards .card.bg-alt3 .card-copy {
+  color: #fff;
+}
+
+/* */
+
+.card {
+  opacity: 0;
+  margin-top: 10px;
+  transition: opacity .2s ease-in, transform .3s ease-in;
+}
+
+.card.shown {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .float-cards .left-side,
+  .float-cards .right-side {
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+  }
+
+  .feature-item {
+    width: 80%;
+  }
+}
