@@ -23,6 +23,22 @@ a:hover {
   text-decoration: underline;
 }
 
+.frontenddaily-bar {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom: 3px solid #f0f0f0;
+}
+.frontenddaily-bar a {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 10px;
+}
+.github-buttons {
+  float: right;
+  padding: 20px 10px;
+  height: 20px;
+}
 
 .container {
   max-width: 1440px;
